@@ -1,0 +1,38 @@
+.front-page-services-element {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1/4;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__element {
+    align-items: center;
+    width: 33%;
+    text-align: center;
+
+    @include medium {
+      width: 50%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+
+    img {
+      height: 7rem;
+      margin-top: 5rem;
+    }
+
+    h3 {
+      margin: 2rem;
+    }
+
+    p {
+      margin: 2rem 5rem;
+    }
+  }
+}

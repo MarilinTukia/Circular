@@ -1,0 +1,15 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle r="64" id="circle" fill="#82ace8" cy="64" cx="64"/>
+  <path id="base" fill="#6772e6" d="m77.5,94l-27,0c-2.2,0 -4,-1.8 -4,-4l0,-52c0,-2.2 1.8,-4 4,-4l27,0c2.2,0 4,1.8 4,4l0,52c0,2.2 -1.8,4 -4,4z"/>
+  <rect y="43" x="49.5" width="29" id="screen" height="42" fill="#82ace8"/>
+  <circle r="2" id="nav" fill="#82ace8" cy="89.8" cx="63.9"/>
+  <path id="speaker" fill="#82ace8" d="m68,39.5l-8,0c-0.5,0 -1,-0.4 -1,-1l0,0c0,-0.5 0.5,-1 1,-1l8,0c0.6,0 1,0.5 1,1l0,0c0,0.6 -0.4,1 -1,1z"/>
+ </g>
+</svg>

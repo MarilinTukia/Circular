@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="home">
+    <div id="page" class="site max--width">
+        <header class="site-header">
+            <section class="site-header__container">
+                <div class="navigation">
+                    <button onclick="window.location.href='index.html'" class="navigation__home">
+                        <img src="assets/src/img/svg/home.svg" alt="">
+                    </button>
+                    <ul class="navigation__menu">
+                        <a href="#services">
+                            <li>Services</li>
+                        </a>
+                        <a href="#team">
+                            <li>Team</li>
+                        </a>
+                        <a href="#portfolio">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#careers">
+                            <li>Careers</li>
+                        </a>
+                        <a href="#blog">
+                            <li>Blog</li>
+                        </a>
+                    </ul>
+                </div>
+                <a href="index.html" class="site-header__container__logo">
+                    <img src="assets/src/img/svg/logo3.png" alt="">
+                </a>
+                <div class="site-header__container__button">
+                    <button>Request a Quote</button>
+                </div>
+                <div class="touch--only">
+                    <div class="navigation__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="navigation__mobile">
+                    <div class="navigation__mobile__column">
+                        <a href="index.html" class="navigation__mobile__column__logo">
+                            <img src="assets/src/img/svg/circularlogo.png" alt="">
+                        </a>
+                        <button onclick="window.location.href='index.html'" class="navigation__home">
+                            <img src="assets/src/img/svg/home.svg" alt="">
+                        </button>
+                        <ul id="menu" class="navigation__mobile__menu">
+                            <a href="#services">
+                                <li>Services</li>
+                            </a>
+                            <a href="#team">
+                                <li>Team</li>
+                            </a>
+                            <a href="#portfolio">
+                                <li>Portfolio</li>
+                            </a>
+                            <a href="#careers">
+                                <li>Careers</li>
+                            </a>
+                            <a href="#blog">
+                                <li>Blog</li>
+                            </a>
+                        </ul>
+                        <div class="site-header__container__button">
+                            <button>Request a Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main class="site-content">
+            <section class="front-page-element">
+                <div class="front-page-element__element">
+                    <div class="front-page-element__element__title">
+                        <h1>This is Circular.</h1>
+                        <h3>Responsive. Retina Ready. Multi-platform.</h3>
+                        <div class="front-page-element__element__title__button">
+                            <button class="button-white">Learn more</button>
+                            <button class="button-black">
+                                <i class="fa fa-play"></i>Watch video</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="front-page-services">
+                <h1>Premium Services</h1>
+                <hr>
+                <div class="front-page-services-element">
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/consult.svg" alt="">
+                        <h3>Consultancy</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/screen.svg" alt="">
+                        <h3>Web Design</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/phone.svg" alt="">
+                        <h3>Mobile Apps</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/branding.svg" alt="">
+                        <h3>Branding</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/illustrate.svg" alt="">
+                        <h3>Illustrations</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                    <a href="" class="front-page-services-element__element">
+                        <img src="assets/src/img/svg/camera.svg" alt="">
+                        <h3>Photography</h3>
+                        <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                            three
+                            rows</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="team" class="front-page-carousel" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <div class="front-page-carousel-element">
+                    <img src="https://images.pexels.com/photos/3773401/pexels-photo-3773401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="">
+                    <div class="front-page-carousel-element__title">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <h4>Amanda Richards</h4>
+                        <h5>Product designer</h5>
+                        <hr>
+                        <p>This should be a bio of the team member. It should't be super long. It coul be two or three
+                            rows. It should't be super long. It coul be two or three rows.</p>
+                        <div class="front-page-carousel-element__title__icons">
+                            <img src="assets/src/img/svg/facebook.svg" alt="">
+                            <img src="assets/src/img/svg/instagram.svg" alt="">
+                            <img src="assets/src/img/svg/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="front-page-carousel-element">
+                    <img src="https://images.pexels.com/photos/389818/pexels-photo-389818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="">
+                    <div class="front-page-carousel-element__title">
+                        <img src="assets/src/img/svg/man.jpg" alt="">
+                        <h4>Daniel Radcliffe</h4>
+                        <h5>Product manager</h5>
+                        <hr>
+                        <p>This should be a bio of the team member. It should't be super long. It coul be two or three
+                            rows. It should't be super long. It coul be two or three rows.</p>
+                        <div class="front-page-carousel-element__title__icons">
+                            <img src="assets/src/img/svg/facebook.svg" alt="">
+                            <img src="assets/src/img/svg/instagram.svg" alt="">
+                            <img src="assets/src/img/svg/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="front-page-carousel-element">
+                    <img src="https://images.pexels.com/photos/196658/pexels-photo-196658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="">
+                    <div class="front-page-carousel-element__title">
+                        <img src="assets/src/img/svg/woman.jpg" alt="">
+                        <h4>Liza Koshy</h4>
+                        <h5>Front-End Developer</h5>
+                        <hr>
+                        <p>This should be a bio of the team member. It should't be super long. It coul be two or three
+                            rows. It should't be super long. It coul be two or three rows.</p>
+                        <div class="front-page-carousel-element__title__icons">
+                            <img src="assets/src/img/svg/facebook.svg" alt="">
+                            <img src="assets/src/img/svg/instagram.svg" alt="">
+                            <img src="assets/src/img/svg/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="front-page-portfolio">
+                <h1>Portfolio</h1>
+                <hr>
+                <div class="my-js-tabs">
+                    <nav class="js-tabs__nav">
+                        <ul class="js-tabs__tabs-container">
+                            <li class="js-tabs__tab active">
+                                <h3>Websites</h3>
+                            </li>
+                            <li class="js-tabs__tab">
+                                <h3>Mobile Apps</h3>
+                            </li>
+                            <li class="js-tabs__tab">
+                                <h3>Identity</h3>
+                            </li>
+                            <li class="js-tabs__tab">
+                                <h3>Illustrations</h3>
+                            </li>
+                        </ul>
+                        <div class="js-tabs__marker"></div>
+                    </nav>
+                    <ul class="js-tabs__content-container">
+                        <li class="js-tabs__content tab active">
+                            <div class="js-tabs__content__image">
+                                <img src="https://images.pexels.com/photos/1440727/pexels-photo-1440727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="">
+                            </div>
+                            <div class="js-tabs__content__details">
+                                <img src="assets/src/img/svg/logo_K.png" alt="">
+                                <h4>Koral Ecommerce Pack</h4>
+                                <p>App description. It should't be super long. It coul be two or three rows.It should't
+                                    be super
+                                    long. It coul be two or three rows.</p>
+                                <button>More details</button>
+                            </div>
+                        </li>
+                        <li class="js-tabs__content tab">
+
+                            <div class="js-tabs__content__image">
+                                <img src="https://images.pexels.com/photos/861126/pexels-photo-861126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="">
+                            </div>
+                            <div class="js-tabs__content__details">
+                                <img src="assets/src/img/svg/logo_K.png" alt="">
+                                <h4>Koral Ecommerce Pack</h4>
+                                <p>App description. It should't be super long. It coul be two or three rows.It should't
+                                    be super
+                                    long. It coul be two or three rows.</p>
+                                <button>More details</button>
+                            </div>
+                        </li>
+                        <li class="js-tabs__content tab">
+                            <div class="js-tabs__content__image">
+                                <img src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                    alt="">
+                            </div>
+                            <div class="js-tabs__content__details">
+                                <img src="assets/src/img/svg/logo_K.png" alt="">
+                                <h4>Koral Ecommerce Pack</h4>
+                                <p>App description. It should't be super long. It coul be two or three rows.It should't
+                                    be super
+                                    long. It coul be two or three rows.</p>
+                                <button>More details</button>
+                            </div>
+                        </li>
+                        <li class="js-tabs__content carousel">
+                            <div class="js-tabs-carousel" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                                <div class="js-tabs-carousel__element">
+                                    <div class="js-tabs-carousel__element__image">
+                                        <img src="https://images.pexels.com/photos/880989/pexels-photo-880989.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                            alt="">
+                                    </div>
+                                    <div class="js-tabs-carousel__element__details">
+                                        <img src="assets/src/img/svg/logo_K.png" alt="">
+                                        <h4>Koral Ecommerce Pack</h4>
+                                        <p>App description. It should't be super long. It coul be two or three rows.It
+                                            should't
+                                            be super
+                                            long. It coul be two or three rows.</p>
+                                        <button>More details</button>
+                                    </div>
+                                </div>
+                                <div class="js-tabs-carousel__element">
+                                    <div class="js-tabs-carousel__element__image">
+                                        <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                            alt="">
+                                    </div>
+                                    <div class="js-tabs-carousel__element__details">
+                                        <img src="assets/src/img/svg/logo_K.png" alt="">
+                                        <h4>Koral Ecommerce Pack</h4>
+                                        <p>App description. It should't be super long. It coul be two or three rows.It
+                                            should't
+                                            be super
+                                            long. It coul be two or three rows.</p>
+                                        <button>More details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="careers" class="front-page-careers">
+                <div class="front-page-careers__title">
+                    <h1>Work with us</h1>
+                    <hr>
+                </div>
+                <div class="front-page-careers-element">
+                    <div class="front-page-careers-element__news">
+                        <h4>Available Positions</h4>
+                        <p>Circular is located in the sunny city of San Francisco, California. It should't be super
+                            long. It coul be two or three rows.It should't be super long. It coul be two or three rows.
+                        </p>
+                        <button class="showCareers">View all jobs</button>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.1253398948597!2d24.80169271605025!3d59.447661181700425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecef2b4a0263%3A0xb5f1da93f7ab0916!2sWeb%20Systems%20O%C3%9C!5e0!3m2!1set!2see!4v1584541032059!5m2!1set!2see"
+                            width="300" height="100" frameborder="0" style="border: 2;
+  border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div id="positions" class="front-page-careers-element__positions">
+                        <a href="">
+                            <h4>Product Manager<img src="assets/src/img/svg/arrowright.svg" alt=""></h4>
+                            <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                                three rows.</p>
+                        </a>
+                        <a href="">
+                            <h4>Front-End Developer<img src="assets/src/img/svg/arrowright.svg" alt=""></h4>
+                            <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                                three rows.</p>
+                        </a>
+                        <a href="">
+                            <h4>Mobile Designer<img src="assets/src/img/svg/arrowright.svg" alt=""></h4>
+                            <p>This should be a description of the feature. It shouldn't be super long. Could be two or
+                                three rows.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="front-page-articles">
+                <div class="front-page-articles__title">
+                    <h1>Behind The Scenes</h1>
+                    <hr>
+                </div>
+                <a href="">
+                    <div class="front-page-articles-element__left">
+                        <img src="https://images.pexels.com/photos/2528116/pexels-photo-2528116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
+                        <div class="front-page-articles-element__left__text">
+                            <h5>Title of the article should be here. It can be quite long actually.</h5>
+                            <div class="front-page-articles-element__left__text__bottom">
+                                <img src="assets/src/img/svg/man.jpg" alt="">
+                                <p>3days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="front-page-articles-element__right">
+                        <img src="https://images.pexels.com/photos/374753/pexels-photo-374753.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="">
+                        <div class="front-page-articles-element__right__text">
+                            <h5>Title of the article should be here. It can be quite long actually.</h5>
+                            <div class="front-page-articles-element__right__text__bottom">
+                                <img src="assets/src/img/svg/woman.jpg" alt="">
+                                <p>3days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <section class="site-footer__icons">
+                <a href=""><img src="assets/src/img/svg/facebook.svg" alt=""></a>
+                <a href=""><img src="assets/src/img/svg/instagram.svg" alt=""></a>
+                <a href=""><img src="assets/src/img/svg/linkedin.svg" alt=""></a>
+                <a href=""><img src="assets/src/img/svg/twitter.svg" alt=""></a>
+            </section>
+            <section class="site-footer__container">
+                <a href="index.html" class="site-footer__container__logo">
+                    <img src="assets/src/img/svg/logo3.png" alt="">
+                </a>
+                <div class="site-footer__container__navigation">
+                    <button onclick="window.location.href='index.html'"
+                        class="site-footer__container__navigation__home">
+                        <img src="assets/src/img/svg/home.svg" alt="">
+                    </button>
+                    <ul class="site-footer__container__navigation__menu">
+                        <a href="#services">
+                            <li>Services</li>
+                        </a>
+                        <a href="#team">
+                            <li>Team</li>
+                        </a>
+                        <a href="#portfolio">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#careers">
+                            <li>Careers</li>
+                        </a>
+                        <a href="#blog">
+                            <li>Blog</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="site-footer__container__button">
+                    <button>Request a Quote</button>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/dist/js/bundle.min.js"></script>
+</body>
+
+</html>

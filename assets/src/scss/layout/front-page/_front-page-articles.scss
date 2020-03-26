@@ -1,0 +1,34 @@
+.front-page-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15rem;
+
+  @include small {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__title {
+    width: 100%;
+
+    h1 {
+      margin-top: 10rem;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    hr {
+      width: 30rem;
+      height: 0.3rem;
+      margin: auto;
+      margin-bottom: 7rem;
+      background-color: $color-light-blue;
+      border: 0 none;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.front-page-portfolio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    grid-column: 1/5;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  hr {
+    grid-column: 1/5;
+    width: 30rem;
+    height: 0.3rem;
+    margin: auto;
+    margin-bottom: 7rem;
+    background-color: $color-brand;
+    border: 0 none;
+
+    @include small {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .my-js-tabs {
+    grid-column: 1/5;
+
+    .js-tabs__nav {
+      grid-column: 1/5;
+      margin-bottom: 5rem;
+      padding-right: 15rem;
+      padding-left: 15rem;
+
+      @include medium {
+        padding: 0;
+      }
+
+      @include small {
+        margin-bottom: 1rem;
+        padding: 0;
+      }
+
+      .js-tabs__tab {
+        &.active {
+          color: $color-brand;
+        }
+      }
+
+      ul {
+        position: relative;
+
+        li {
+          display: inline-block;
+          margin: 5rem;
+          cursor: pointer;
+
+          @include small {
+            width: 100%;
+            margin: 0;
+            padding-bottom: 1rem;
+          }
+
+          h3 {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .js-tabs__marker {
+        position: absolute;
+        height: 0.5rem;
+        background-color: $color-brand;
+        transition: all 0.5s;
+
+        @include small {
+          height: 0;
+        }
+      }
+    }
+
+    .js-tabs__content-container {
+      position: relative;
+      grid-column: 1/5;
+      height: 50rem;
+    }
+  }
+}
+

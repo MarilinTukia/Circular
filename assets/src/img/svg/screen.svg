@@ -1,0 +1,15 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle r="64" id="circle" fill="#82ace8" cy="64" cx="64"/>
+  <path id="keyboard" fill="#6772e6" d="m104,87l0,0c0,2.2 -1.8,4 -4,4l-72,0c-2.2,0 -4,-1.8 -4,-4l0,0"/>
+  <path id="touchpad" fill="#6772e6" d="m71.5,87l0,0c0,1.1 -0.9,2 -2,2l-11,0c-1.1,0 -2,-0.9 -2,-2l0,0"/>
+  <path id="frame" fill="#6772e6" d="m95,37l-62,0c-2.2,0 -4,1.8 -4,4l0,36l0,6l0,4l4,0l62,0l4,0l0,-4l0,-6l0,-36c0,-2.2 -1.8,-4 -4,-4z"/>
+  <rect y="41" x="33" width="62" id="screen" height="42" fill="#82ace8"/>
+ </g>
+</svg>

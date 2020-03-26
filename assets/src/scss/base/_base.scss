@@ -1,0 +1,90 @@
+// -------------------------------------------------------------------------
+// This file contains basic styles.
+// -------------------------------------------------------------------------
+
+/* stylelint-disable */
+html {
+  box-sizing: border-box;
+  font-size: 0.625rem;
+
+  @media screen and (min-width: $small) and (max-width: 1919px) {
+    font-size: calc(0.3rem + 0.28vw);
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: calc(0.3rem + 1vw);
+  }
+
+  &.wp-toolbar {
+    font-size: inherit;
+  }
+}
+/* stylelint-enable */
+
+.body {
+  overflow-x: hidden;
+}
+
+.max--width {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.max--width--smaller {
+  position: relative;
+  max-width: $max-width-smaller;
+  margin: 0 auto;
+
+  @include medium {
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+  }
+}
+
+.overflow--disable {
+  overflow: hidden;
+}
+
+.desktop--only {
+  @include medium {
+    display: none;
+  }
+}
+
+.touch--only {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.1rem;
+  padding: 0;
+  overflow: hidden;
+  word-wrap: normal !important;
+  border: 0;
+  clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+  clip-path: inset(50%);
+}
+
+.page--shadow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+
+  &.visible {
+    opacity: 0.5;
+    pointer-events: all;
+  }
+}

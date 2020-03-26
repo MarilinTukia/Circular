@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+/*!
+Theme Name: WS Starter Theme gulp+webpack
+Description:
+Author: Web Systems OÜ
+Author URI: https://www.websystems.ee/
+Version: __WS_THEME_VERSION__
+Style Version: 1.0.2
+Text Domain: ws-starter-theme
+*/
+
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+// 2. Vendors
+@import 'vendors/ie-alert';
+@import 'vendors/slick';
+
+// 3. Base stuff
+@import 'base/reset';
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/cookiebar';
+
+// 4. Admin styles
+@import 'admin/adminbar';
+
+// 5. Layout-related sections
+@import 'layout/generic/grid';
+@import 'layout/generic/header';
+@import 'layout/generic/footer';
+@import 'layout/generic/sidebar';
+@import 'layout/generic/forms';
+@import 'layout/generic/user-content';
+@import 'layout/generic/navigation';
+@import 'layout/front-page/front-page-services';
+@import 'layout/front-page/-front-page-carousel';
+@import 'layout/front-page/front-page-portfolio';
+@import 'layout/front-page/front-page-careers';
+@import 'layout/front-page/front-page-articles';
+@import 'layout/front-page/front-page-element';
+
+
+// 6. Components
+@import 'components/generic/site-logo';
+@import 'components/generic/site-nav';
+@import 'components/generic/hamburger';
+@import 'components/front-page/front-page-services-element';
+@import 'components/front-page/front-page-carousel-element';
+@import 'components/front-page/front-page-portfolio-element';
+@import 'components/front-page/front-page-careers-element';
+@import 'components/front-page/front-page-articles-element';
+
+// 7. Page-specific styles
+@import 'pages/home';
+@import 'pages/content';
