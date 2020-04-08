@@ -1,0 +1,12 @@
+.design-services {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $color-light-gray;
+
+  @include small {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+  }
+}

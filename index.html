@@ -16,12 +16,33 @@
         <header class="site-header">
             <section class="site-header__container">
                 <div class="navigation">
+                    <!-- <a href=""></a> -->
                     <button onclick="window.location.href='index.html'" class="navigation__home">
                         <img src="assets/src/img/svg/home.svg" alt="">
                     </button>
                     <ul class="navigation__menu">
-                        <a href="#services">
-                            <li>Services</li>
+                        <a href="#">
+                            <li id="services" class="services-menu">Services</li>
+                            <ul id="drop" class="services-dropdown">
+                                <a href="#"><img src="assets/src/img/svg/consult.svg" alt="">
+                                    <li>Consultancy</li>
+                                </a>
+                                <a href="/web-design.html"><img src="assets/src/img/svg/screen.svg" alt="">
+                                    <li>Web Design</li>
+                                </a>
+                                <a href="#"><img src="assets/src/img/svg/phone.svg" alt="">
+                                    <li>Mobile Apps</li>
+                                </a>
+                                <a href="#"><img src="assets/src/img/svg/branding.svg" alt="">
+                                    <li>Branding</li>
+                                </a>
+                                <a href="#"><img src="assets/src/img/svg/illustrate.svg" alt="">
+                                    <li>Illustrations</li>
+                                </a>
+                                <a href="#"><img src="assets/src/img/svg/camera.svg" alt="">
+                                    <li>Photography</li>
+                                </a>
+                            </ul>
                         </a>
                         <a href="#team">
                             <li>Team</li>
@@ -41,8 +62,9 @@
                     <img src="assets/src/img/svg/logo3.png" alt="">
                 </a>
                 <div class="site-header__container__button">
-                    <button>Request a Quote</button>
+                    <button class="quoteBtn">Request a Quote </button>
                 </div>
+
                 <div class="touch--only">
                     <div class="navigation__burger">
                         <span></span>
@@ -53,8 +75,28 @@
                 <div class="navigation__mobile">
                     <div class="navigation__mobile__column">
                         <ul id="menu" class="navigation__mobile__menu">
-                            <a href="#services">
-                                <li>Services</li>
+                            <a href="#">
+                                <li class="services-menu-mobile">Services</li>
+                                <ul class="services-dropdown-mobile">
+                                    <a href="#">
+                                        <li>Consultancy</li>
+                                    </a>
+                                    <a href="/web-design.html">
+                                        <li>Web Design</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Mobile Apps</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Branding</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Illustrations</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Photography</li>
+                                    </a>
+                                </ul>
                             </a>
                             <a href="#team">
                                 <li>Team</li>
@@ -69,8 +111,8 @@
                                 <li>Blog</li>
                             </a>
                         </ul>
-                        <div class="site-header__container__button">
-                            <button>Request a Quote</button>
+                        <div class="navigation__mobile__button">
+                            <button class="quoteBtn">Request a Quote</button>
                         </div>
                     </div>
                 </div>
@@ -78,14 +120,14 @@
         </header>
 
         <main class="site-content">
-            <section class="front-page-element">
-                <div class="front-page-element__element">
-                    <div class="front-page-element__element__title">
+            <section class="front-page-hero">
+                <div class="front-page-hero__element">
+                    <div class="front-page-hero__element__title">
                         <h1>This is Circular.</h1>
                         <h3>Responsive. Retina Ready. Multi-platform.</h3>
-                        <div class="front-page-element__element__title__button">
+                        <div class="front-page-hero__element__title__button">
                             <button class="button-white">Learn more</button>
-                            <button class="button-black">
+                            <button class="button-whiter">
                                 <i class="fa fa-play"></i>Watch video</button>
                         </div>
                     </div>
@@ -103,35 +145,35 @@
                             three
                             rows</p>
                     </a>
-                    <a href="" class="front-page-services-element__element">
+                    <a href="/web-design.html" class="front-page-services-element__element">
                         <img src="assets/src/img/svg/screen.svg" alt="">
                         <h3>Web Design</h3>
                         <p>This should be a description of the feature. It shouldn't be super long. Could be two or
                             three
                             rows</p>
                     </a>
-                    <a href="" class="front-page-services-element__element">
+                    <a href="#" class="front-page-services-element__element">
                         <img src="assets/src/img/svg/phone.svg" alt="">
                         <h3>Mobile Apps</h3>
                         <p>This should be a description of the feature. It shouldn't be super long. Could be two or
                             three
                             rows</p>
                     </a>
-                    <a href="" class="front-page-services-element__element">
+                    <a href="#" class="front-page-services-element__element">
                         <img src="assets/src/img/svg/branding.svg" alt="">
                         <h3>Branding</h3>
                         <p>This should be a description of the feature. It shouldn't be super long. Could be two or
                             three
                             rows</p>
                     </a>
-                    <a href="" class="front-page-services-element__element">
+                    <a href="#" class="front-page-services-element__element">
                         <img src="assets/src/img/svg/illustrate.svg" alt="">
                         <h3>Illustrations</h3>
                         <p>This should be a description of the feature. It shouldn't be super long. Could be two or
                             three
                             rows</p>
                     </a>
-                    <a href="" class="front-page-services-element__element">
+                    <a href="#" class="front-page-services-element__element">
                         <img src="assets/src/img/svg/camera.svg" alt="">
                         <h3>Photography</h3>
                         <p>This should be a description of the feature. It shouldn't be super long. Could be two or
@@ -314,7 +356,7 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.1253398948597!2d24.80169271605025!3d59.447661181700425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692ecef2b4a0263%3A0xb5f1da93f7ab0916!2sWeb%20Systems%20O%C3%9C!5e0!3m2!1set!2see!4v1584541032059!5m2!1set!2see"
                             width="300" height="100" frameborder="0" style="border: 2;
-  border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <div id="positions" class="front-page-careers-element__positions">
                         <a href="">
@@ -406,10 +448,61 @@
                 </div>
 
                 <div class="site-footer__container__button">
-                    <button>Request a Quote</button>
+                    <button class="quoteBtn">Request a Quote</button>
                 </div>
             </section>
         </footer>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Request a Quote</h1>
+                <hr>
+                <p>We'll work with you to help you find the solutions you've been looking for!</p>
+                <p>Ready to find out more? Fill out the form below and we'll start talking about options for
+                    your new site!</p>
+                <form action="">
+                    <div class="basic">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname">
+                        <label for="email">E-mail address:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname">
+                        <label for="bname">Business name:</label>
+                        <input type="text" id="bname" name="bname"><br>
+                    </div>
+
+                    <h5>Are you interested in:</h5>
+                    <div class="checkbox">
+                        <input type="checkbox" id="design" name="design">
+                        <label for="design">Custom website design</label><br>
+                        <input type="checkbox" id="searchEngine" name="searchEngine">
+                        <label for="searchEngine">Search engine optimization</label><br>
+                        <input type="checkbox" id="WordPress" name="WordPress">
+                        <label for="WordPress">WordPress help</label><br>
+                        <input type="checkbox" id="logo" name="logo">
+                        <label for="logo">Logo design</label><br>
+                        <input type="checkbox" id="Ecommerce" name="Ecommerce">
+                        <label for="Ecommerce">E-commerce website</label><br>
+                        <input type="checkbox" id="print" name="print">
+                        <label for="print">Print design</label><br>
+                    </div>
+
+                    <h5>Please tell us a little about you and your business.</h5>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+
+                    <input class="submit" type="submit" value="Get Quote Now">
+
+                </form>
+            </div>
+
+        </div>
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"

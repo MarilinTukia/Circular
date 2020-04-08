@@ -9,4 +9,6 @@ import './components/base/hamburger';
 import './components/base/tabnavigator';
 import './components/front-page/careers';
 import './components/generic/header';
+import './components/front-page/modal';
+import './components/generic/dropdown';
 

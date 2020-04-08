@@ -1,0 +1,112 @@
+.services-hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 80rem;
+  margin-top: -10rem;
+  background-image: linear-gradient(to bottom right, #04028b, #2f2db9, #504dff, $color-brand , #c458bb, #e07c4d);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backface-visibility: hidden;
+  
+  &__element {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+    @include small {
+      width: 100%;
+    }
+  
+    &__title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: $color-white;
+      text-align: center;
+  
+      h1 {
+        margin: 2rem;
+        font-size: 7rem;
+        letter-spacing: 0.3rem;
+
+        @include small {
+          font-size: 5.5rem;
+        }
+      }
+
+      hr {
+        width: 30rem;
+        height: 0.3rem;
+        margin-bottom: 7rem;
+        background-color: $color-white;
+        border: 0 none;
+      }
+  
+      p {
+        margin-left: 10rem;
+        line-height: 3rem;
+        text-align: left;
+
+        @include small {
+          margin: 1rem;
+          padding: 0 4rem;
+          text-align: center;
+        }
+      }
+  
+      &__button {
+        display: inline-block;
+        align-self: flex-end;
+        margin-top: 3rem;
+  
+        .button-white {
+          margin: 1rem;
+          padding: 1rem 2rem;
+          color: $color-white;
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          border: 0.1rem solid $color-white;
+          border-radius: 2rem;
+        }
+  
+        .button-whiter {
+          margin: 1rem;
+          padding: 1rem 2rem;
+          color: #00505a;
+          font-weight: 500;
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          background-color: $color-white;
+          border: 0.1rem solid $color-white;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 5rem;
+    bottom: 10rem;
+    width: 50%;
+    text-align: end;
+
+    @include small {
+      display: none;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+}

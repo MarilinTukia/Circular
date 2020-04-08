@@ -7,8 +7,12 @@ if (mobileToggle) {
     });
 }
 
-$('#menu a').click(function() {
-    document.querySelector('.navigation__burger').classList.remove('active');
-    document.querySelector('body').classList.remove('overflow--disable');
-    document.querySelector('.navigation__mobile').classList.remove('visible');
-})
+// $('#menu a').click(function() {
+//     document.querySelector('.navigation__burger').classList.remove('active');
+//     document.querySelector('body').classList.remove('overflow--disable');
+//     document.querySelector('.navigation__mobile').classList.remove('visible');
+// })
+
+
+
+

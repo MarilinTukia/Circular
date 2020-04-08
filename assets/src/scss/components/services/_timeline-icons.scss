@@ -1,0 +1,43 @@
+.timeline-icons {
+  grid-column: 2/3;
+
+  @include small {
+    display: none;
+
+    &.mobile--only {
+      display: block;
+      grid-column: 1/2;
+    }
+  }
+
+  &__element {
+    height: 10rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .launch {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    .end {
+      width: 5.5rem;
+      height: 2rem;
+    }
+
+  }
+
+  &__line {
+    height: 15rem;
+    margin-bottom: 3rem;
+    margin-left: 2.5rem;
+    border-left: 0.3rem solid #00505a;
+
+    @include small {
+      height: 27rem;
+    }
+  }
+}

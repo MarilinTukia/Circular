@@ -1,0 +1,159 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  // background-color: #000;
+  z-index: 4;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+  
+  
+.modal-content {
+  position: relative;
+  width: 70%;
+  margin: 15rem auto;
+  padding: 0.2rem;
+  text-align: center;
+  background-color: $color-white;
+  border: 0.1rem solid $color-gray;
+  border-radius: 2rem;
+
+  @include medium {
+    width: 80%;
+  }
+
+  @include small {
+    width: 90%;
+  }
+
+  h1 {
+    margin: 5rem 2rem 2rem;
+  }
+
+  hr {
+    width: 30rem;
+    height: 0.3rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    background-color: $color-brand;
+    border: 0 none;
+  }
+
+  p {
+    margin: 2rem;
+  }
+
+  form {
+    margin: 2rem 5rem 5rem;
+    padding-top: 3rem;
+    background-color: #f4f4f4;
+    border: 0.1rem solid $color-brand;
+    border-radius: 1rem;
+
+    @include small {
+      margin: 3rem;
+    }
+
+    .basic {
+      @include small {
+        display: flex;
+        flex-wrap: wrap;
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    label {
+      margin-left: 2rem;
+      font-size: 1.6rem;
+    }
+
+    
+    input {
+      margin: 1rem 0;
+      border: 0.1rem solid $color-brand;
+      border-radius: 0.5rem;
+
+      @include small {
+        margin-right: 2rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .submit {
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      color: $color-brand;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      border: 0.1rem solid $color-brand;
+      border-radius: 2rem;
+    }
+
+    h5 {
+      margin: 1.5rem;
+      font-size: 2.6rem;
+    }
+
+    .checkbox {
+      margin-left: 35%;
+      text-align: left;
+
+      @include small {
+        margin-left: 2rem;
+      }
+
+
+      label {
+        margin-left: 0;
+        font-size: 1.6rem;
+      }
+    }
+
+    textarea {
+      width: 68rem;
+      height: 8rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: $color-white;
+      border-radius: 1rem;
+
+      @include medium {
+        width: 80%;
+      }
+
+      @include small {
+        width: 90%;
+      }
+    }
+  }
+}
+  
+  
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  color: $color-gray;
+  font-weight: 500;
+  font-size: 4rem;
+
+  @include small {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+  
+.close:hover,
+.close:focus {
+  color: $color-brand;
+  text-decoration: none;
+  cursor: pointer;
+}

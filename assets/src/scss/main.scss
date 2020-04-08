@@ -38,12 +38,18 @@ Text Domain: ws-starter-theme
 @import 'layout/generic/forms';
 @import 'layout/generic/user-content';
 @import 'layout/generic/navigation';
+@import 'layout/generic/modal';
 @import 'layout/front-page/front-page-services';
-@import 'layout/front-page/-front-page-carousel';
+@import 'layout/front-page/front-page-carousel';
 @import 'layout/front-page/front-page-portfolio';
 @import 'layout/front-page/front-page-careers';
 @import 'layout/front-page/front-page-articles';
-@import 'layout/front-page/front-page-element';
+@import 'layout/front-page/front-page-hero';
+@import 'layout/services/hero';
+@import 'layout/services/design-services';
+@import 'layout/services/process';
+@import 'layout/services/get-started';
+@import 'layout/services/timeline';
 
 
 // 6. Components
@@ -55,6 +61,10 @@ Text Domain: ws-starter-theme
 @import 'components/front-page/front-page-portfolio-element';
 @import 'components/front-page/front-page-careers-element';
 @import 'components/front-page/front-page-articles-element';
+@import 'components/services/design-services-element';
+@import 'components/services/timeline-left';
+@import 'components/services/timeline-right';
+@import 'components/services/timeline-icons';
 
 // 7. Page-specific styles
 @import 'pages/home';

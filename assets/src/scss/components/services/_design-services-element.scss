@@ -1,0 +1,61 @@
+.design-services-element {
+  justify-content: center;
+  width: 35rem;
+  margin: 10rem 3rem;
+  text-align: center;
+  background-color: $color-white;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 3rem 0.3rem rgba(0, 0, 0, 0.15);
+
+  @include small {
+    height: auto;
+    margin: 5rem 2rem;
+  }
+
+
+  &__icon {
+    position: relative;
+    width: 100%;
+    margin-top: 8rem;
+
+    @include small {
+      margin-top: 7rem;
+    }
+
+    a {
+      position: relative;
+      z-index: 2;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .background {
+      position: absolute;
+      top: -5rem;
+      left: 8rem;
+      z-index: 1;
+      height: 15rem;
+
+      @include small {
+        top: -4rem;
+        left: 9rem;
+        height: 14rem;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 2rem;
+
+    h5 {
+      margin: 4rem 2rem;
+      line-height: 3rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
