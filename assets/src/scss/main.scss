@@ -50,6 +50,8 @@ Text Domain: ws-starter-theme
 @import 'layout/services/process';
 @import 'layout/services/get-started';
 @import 'layout/services/timeline';
+@import 'layout/portfolio/portfolio-hero';
+@import 'layout/portfolio/websites';
 
 
 // 6. Components
@@ -65,6 +67,7 @@ Text Domain: ws-starter-theme
 @import 'components/services/timeline-left';
 @import 'components/services/timeline-right';
 @import 'components/services/timeline-icons';
+@import 'components/portfolio/websites-element';
 
 // 7. Page-specific styles
 @import 'pages/home';

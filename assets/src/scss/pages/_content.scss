@@ -1,2 +1,12 @@
-// .page:not(.home) {
-// }
+.page:not(.home) {
+  .site {
+    position: relative;
+    
+    .site-footer {
+      position: absolute;
+      bottom: 0;
+      background-image: none;
+      
+    }
+  }
+}

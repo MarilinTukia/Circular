@@ -1,0 +1,67 @@
+.websites {
+  width: 100%;
+  margin-top: -10rem;
+  background-color: #f4f4f4;
+
+  .heading2 {
+    padding-top: 10rem;
+    opacity: 0;
+    transition: 1s;
+
+    &.show {
+      opacity: 1;
+    }
+
+    h1 {
+      margin: 10rem;
+      text-align: center;
+    }
+  }
+
+  .websites-element {
+    width: 100%;
+  }
+}
+
+.mobile-apps {
+  width: 100%;
+  margin-top: -10rem;
+  background: linear-gradient(to bottom, #f4f4f4 50%, $color-white 100%);
+
+  .heading1 {
+    opacity: 0;
+    transition: 1s;
+
+    &.show {
+      opacity: 1;
+    }
+
+    h1 {
+      margin: 10rem;
+      text-align: center;
+    }
+  }
+
+  .mobile-apps-element {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10rem 0;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    &__element {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2rem 3rem 0.3rem rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+  
+      img {
+        width: 40rem;
+      }
+    }
+  }
+}
+
+

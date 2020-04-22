@@ -8,58 +8,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="home">
+<body class="home page">
     <div id="page" class="site max--width">
         <header class="site-header">
             <section class="site-header__container">
                 <div class="navigation">
-                    <!-- <a href=""></a> -->
-                    <button onclick="window.location.href='index.html'" class="navigation__home">
+                    <a href="index.html" class="navigation__home">
                         <img src="assets/src/img/svg/home.svg" alt="">
-                    </button>
+                    </a>
                     <ul class="navigation__menu">
-                        <a href="#">
-                            <li id="services" class="services-menu">Services</li>
-                            <ul id="drop" class="services-dropdown">
-                                <a href="#"><img src="assets/src/img/svg/consult.svg" alt="">
-                                    <li>Consultancy</li>
-                                </a>
-                                <a href="/web-design.html"><img src="assets/src/img/svg/screen.svg" alt="">
-                                    <li>Web Design</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/phone.svg" alt="">
-                                    <li>Mobile Apps</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/branding.svg" alt="">
-                                    <li>Branding</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/illustrate.svg" alt="">
-                                    <li>Illustrations</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/camera.svg" alt="">
-                                    <li>Photography</li>
-                                </a>
+                        <li id="services" class="have-submenu"><a href="#">Services</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/consult.svg" alt="">
+                                        <h5>Consultancy</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/web-design.html"><img src="assets/src/img/svg/screen.svg" alt="">
+                                        <h5>Web Design</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/phone.svg" alt="">
+                                        <h5>Mobile Apps</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/branding.svg" alt="">
+                                        <h5>Branding</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/illustrate.svg" alt="">
+                                        <h5>Illustrations</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/camera.svg" alt="">
+                                        <h5>Photography</h5>
+                                    </a>
+                                </li>
                             </ul>
-                        </a>
-                        <a href="#team">
-                            <li>Team</li>
-                        </a>
-                        <a href="#portfolio">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="#careers">
-                            <li>Careers</li>
-                        </a>
-                        <a href="#blog">
-                            <li>Blog</li>
-                        </a>
+                        </li>
+                        
+                        <li><a href="#">Team</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+
                     </ul>
                 </div>
                 <a href="index.html" class="site-header__container__logo">
-                    <img src="assets/src/img/svg/logo3.png" alt="">
+                    <img src="assets/dist/img/svg/logo3.png" alt="">
                 </a>
                 <div class="site-header__container__button">
                     <button class="quoteBtn">Request a Quote </button>
@@ -134,7 +139,7 @@
                 </div>
             </section>
 
-            <section id="services" class="front-page-services">
+            <section  id="services" class="front-page-services">
                 <h1>Premium Services</h1>
                 <hr>
                 <div class="front-page-services-element">
@@ -347,7 +352,8 @@
                     <hr>
                 </div>
                 <div class="front-page-careers-element">
-                    <div class="front-page-careers-element__news">
+                    <div data-aos="fade-up"
+                    data-aos-duration="4000"  class="front-page-careers-element__news">
                         <h4>Available Positions</h4>
                         <p>Circular is located in the sunny city of San Francisco, California. It should't be super
                             long. It coul be two or three rows.It should't be super long. It coul be two or three rows.
@@ -358,7 +364,8 @@
                             width="300" height="100" frameborder="0" style="border: 2;
 border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                    <div id="positions" class="front-page-careers-element__positions">
+                    <div data-aos="fade-up"
+                    data-aos-duration="3500" id="positions" class="front-page-careers-element__positions">
                         <a href="">
                             <h4>Product Manager<img src="assets/src/img/svg/arrowright.svg" alt=""></h4>
                             <p>This should be a description of the feature. It shouldn't be super long. Could be two or
@@ -384,7 +391,7 @@ border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></ifra
                     <hr>
                 </div>
                 <a href="">
-                    <div class="front-page-articles-element__left">
+                    <div data-aos="zoom-in-right" class="front-page-articles-element__left">
                         <img src="https://images.pexels.com/photos/2528116/pexels-photo-2528116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="">
                         <div class="front-page-articles-element__left__text">
@@ -397,7 +404,7 @@ border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></ifra
                     </div>
                 </a>
                 <a href="">
-                    <div class="front-page-articles-element__right">
+                    <div data-aos="zoom-in-left" class="front-page-articles-element__right">
                         <img src="https://images.pexels.com/photos/374753/pexels-photo-374753.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="">
                         <div class="front-page-articles-element__right__text">
@@ -413,17 +420,12 @@ border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></ifra
         </main>
 
         <footer class="site-footer">
-            <section class="site-footer__icons">
-                <a href=""><img src="assets/src/img/svg/facebook.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/instagram.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/linkedin.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/twitter.svg" alt=""></a>
-            </section>
+
             <section class="site-footer__container">
                 <a href="index.html" class="site-footer__container__logo">
-                    <img src="assets/src/img/svg/logo3.png" alt="">
+                    <img src="assets/dist/img/svg/logo3.png" alt="">
                 </a>
-                <div class="site-footer__container__navigation">
+                <!-- <div class="site-footer__container__navigation">
                     <button onclick="window.location.href='index.html'"
                         class="site-footer__container__navigation__home">
                         <img src="assets/src/img/svg/home.svg" alt="">
@@ -445,12 +447,21 @@ border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></ifra
                             <li>Blog</li>
                         </a>
                     </ul>
+                </div> -->
+
+                <div class="site-footer__icons">
+                    <a href=""><img src="assets/dist/img/svg/facebook.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/linkedin.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/twitter.svg" alt=""></a>
                 </div>
 
                 <div class="site-footer__container__button">
                     <button class="quoteBtn">Request a Quote</button>
                 </div>
             </section>
+
+
         </footer>
 
         <!-- The Modal -->
@@ -509,6 +520,10 @@ border-radius: 1rem;" allowfullscreen="" aria-hidden="false" tabindex="0"></ifra
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="assets/dist/js/bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/src/js/components/base/gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 </body>
 
 </html>

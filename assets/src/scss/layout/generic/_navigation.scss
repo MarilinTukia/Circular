@@ -1,5 +1,7 @@
 .navigation {
+  position: relative;
   display: flex;
+  align-items: center;
   max-width: 15%;
   margin-left: 10rem;
 
@@ -12,8 +14,6 @@
 
     img {
       height: 100%;
-      margin-top: 1rem;
-      margin-left: 1rem;
       filter: brightness(0) invert(1); 
     }
   }
@@ -29,61 +29,72 @@
       display: none;
     }
 
-    a {
-      li {
-        position: relative;
-        margin: 1.5rem;
+    li {
+      a {
+        margin-right: 1.5rem;
         color: $color-white;
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
 
-        &.active {
-          &::after {
-            position: absolute;
-            bottom: -2rem;
-            left: 0;
-            width: 100%;
-            border-style: solid;
-            border-width: 0 0 0.1rem;
-            content: '';
+        &:hover {
+          color: $color-white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .have-submenu {
+      &.active {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          bottom: -2rem;
+          left: 0;
+          width: 100%;
+          border-style: solid;
+          border-width: 0 0 0.1rem;
+          content: '';
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 7rem;
+          left: 0;
+          display: block;
+          width: 23rem;
+          padding: 3rem;
+          text-align: center;
+          text-align: justify;
+          background-color: $color-light-gray;
+
+          li {
+            margin: 2rem 0;
+
+            a {
+              display: inline-flex;
+              align-items: center;
+
+              img {
+                height: 3.5rem;
+              }
+  
+              h5 {
+                margin-left: 1rem;
+                color: #00505a;
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 3rem;
+              }
+            }
           }
         }
       }
 
-      &:hover {
-        color: $color-white;
-        text-decoration: none;
-      }
-    }
 
-    .services-dropdown {
-      position: relative;
-      display: none;
-
-      &.visible {
-        position: absolute;
-        top: 10rem;
-        left: 9rem;
-        display: block;
-        width: 23rem;
-        padding: 3rem;
-        text-align: center;
-        text-align: justify;
-        background-color: $color-light-gray;
-      }
-
-      a {
-        display: inline-flex;
-        align-items: center;
-
-        img {
-          height: 3.5rem;
-        }
-
-        li {
-          color: #00505a;
-          line-height: 3rem;
-        }
+      .dropdown {
+        position: relative;
+        display: none;
       }
     }
   }
@@ -194,6 +205,10 @@
               border-style: solid;
               border-width: 0 0 0.1rem;
               content: '';
+            }
+
+            .services-dropdown-mobile {
+              display: block;
             }
           }
         }

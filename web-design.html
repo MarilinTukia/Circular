@@ -8,57 +8,63 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="home">
+<body class="page">
     <div id="page" class="site max--width">
         <header class="site-header">
             <section class="site-header__container">
                 <div class="navigation">
-                    <button onclick="window.location.href='index.html'" class="navigation__home">
+                    <a href="index.html" class="navigation__home">
                         <img src="assets/src/img/svg/home.svg" alt="">
-                    </button>
+                    </a>
                     <ul class="navigation__menu">
-                        <a href="#">
-                            <li class="services-menu">Services</li>
-                            <ul class="services-dropdown">
-                                <a href="#"><img src="assets/src/img/svg/consult.svg" alt="">
-                                    <li>Consultancy</li>
-                                </a>
-                                <a href="/web-design.html"><img src="assets/src/img/svg/screen.svg" alt="">
-                                    <li>Web Design</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/phone.svg" alt="">
-                                    <li>Mobile Apps</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/branding.svg" alt="">
-                                    <li>Branding</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/illustrate.svg" alt="">
-                                    <li>Illustrations</li>
-                                </a>
-                                <a href="#"><img src="assets/src/img/svg/camera.svg" alt="">
-                                    <li>Photography</li>
-                                </a>
+                        <li id="services" class="have-submenu"><a href="#">Services</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/consult.svg" alt="">
+                                        <h5>Consultancy</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/web-design.html"><img src="assets/src/img/svg/screen.svg" alt="">
+                                        <h5>Web Design</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/phone.svg" alt="">
+                                        <h5>Mobile Apps</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/branding.svg" alt="">
+                                        <h5>Branding</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/illustrate.svg" alt="">
+                                        <h5>Illustrations</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/src/img/svg/camera.svg" alt="">
+                                        <h5>Photography</h5>
+                                    </a>
+                                </li>
                             </ul>
-                        </a>
-                        <a href="#team">
-                            <li>Team</li>
-                        </a>
-                        <a href="#portfolio">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="#careers">
-                            <li>Careers</li>
-                        </a>
-                        <a href="#blog">
-                            <li>Blog</li>
-                        </a>
+                        </li>
+
+                        <li><a href="#">Team</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#blog">Blog</a></li>
+
                     </ul>
                 </div>
                 <a href="index.html" class="site-header__container__logo">
-                    <img src="assets/src/img/svg/logo3.png" alt="">
+                    <img src="assets/dist/img/svg/logo3.png" alt="">
                 </a>
                 <div class="site-header__container__button">
                     <button class="quoteBtn">Request a Quote </button>
@@ -100,7 +106,7 @@
                             <a href="#team">
                                 <li>Team</li>
                             </a>
-                            <a href="#portfolio">
+                            <a href="/portfolio.html">
                                 <li>Portfolio</li>
                             </a>
                             <a href="#careers">
@@ -204,20 +210,20 @@
             <section class="timeline">
 
                 <div class="timeline-left">
-                    <div class="timeline-left__element">
+                    <div data-aos="fade-up-right" class="timeline-left__element">
                         <h5>Discovery</h5>
                         <p>We want to know all about you! Part of our on-boarding process involves completing a
                             discovery questionnaire, asking a ton of questions about your business or organization,
                             telling us about sites you love, sites you had and more.</p>
                     </div>
-                    <div class="timeline-left__element">
+                    <div data-aos="fade-up-right" class="timeline-left__element">
                         <h5>Development</h5>
                         <p>We'll take your completed concept and turn it into a working website. Once completed, we'll
                             provide you with a URL for previewing and testing your site. This gives you the opportunity
                             to test it and check that all the links and buttons work, and make sure you like the images
                             and content layout.</p>
                     </div>
-                    <div class="timeline-left__element">
+                    <div data-aos="fade-up-right" class="timeline-left__element">
                         <h5>Launch!</h5>
                         <p>Hooray, it's time for launch! That means you've tested, approved, and are ready to make your
                             site live to the world. We'll do all the technical work in this process - getting it loaded
@@ -262,21 +268,21 @@
                 </div>
 
                 <div class="timeline-right">
-                    <div class="timeline-right__element">
+                    <div data-aos="fade-up-left" class="timeline-right__element">
                         <h5>Design</h5>
                         <p> Using the information you provided during our discovery, we will work to create a custom
                             design just for you. You'll get a style guide of color, typography and device responsiveness
                             provided along with a full-page initial concept of the home page for your review and input.
                         </p>
                     </div>
-                    <div class="timeline-right__element">
+                    <div data-aos="fade-up-left" class="timeline-right__element">
                         <h5>Content</h5>
                         <p>Your customers have come to the website for a reason, so you want to be sure you've answered
                             all their questions! Content is crucial to every website.
                             We'll take your content and lay it out on each page so that it looks great and is easy to
                             read.</p>
                     </div>
-                    <div class="timeline-right__element">
+                    <div data-aos="fade-up-left" class="timeline-right__element">
                         <h5>Training and support</h5>
                         <p>Your website is launched, but we're just beginning! We'll schedule a training call so we can
                             walk you through how to manage your website as well as answer all your questions. Your site
@@ -330,7 +336,8 @@
                     <div class="timeline-right__element">
                         <h5>Design</h5>
                         <p> Using the information you provided, we will work to create a custom
-                            design just for you. You will get a style guide of color, typography and device responsiveness
+                            design just for you. You will get a style guide of color, typography and device
+                            responsiveness
                             provided along with a full-page initial concept of the home page for your review.
                         </p>
                     </div>
@@ -367,7 +374,7 @@
 
 
 
-            
+
 
 
             <section class="get-started">
@@ -397,38 +404,16 @@
         </main>
 
         <footer class="site-footer">
-            <section class="site-footer__icons design">
-                <a href=""><img src="assets/src/img/svg/facebook.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/instagram.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/linkedin.svg" alt=""></a>
-                <a href=""><img src="assets/src/img/svg/twitter.svg" alt=""></a>
-            </section>
             <section class="site-footer__container">
                 <a href="index.html" class="site-footer__container__logo">
-                    <img src="assets/src/img/svg/logo3.png" alt="">
+                    <img src="assets/dist/img/svg/logo3.png" alt="">
                 </a>
-                <div class="site-footer__container__navigation">
-                    <button onclick="window.location.href='index.html'"
-                        class="site-footer__container__navigation__home">
-                        <img src="assets/src/img/svg/home.svg" alt="">
-                    </button>
-                    <ul class="site-footer__container__navigation__menu">
-                        <a href="#services">
-                            <li>Services</li>
-                        </a>
-                        <a href="#team">
-                            <li>Team</li>
-                        </a>
-                        <a href="#portfolio">
-                            <li>Portfolio</li>
-                        </a>
-                        <a href="#careers">
-                            <li>Careers</li>
-                        </a>
-                        <a href="#blog">
-                            <li>Blog</li>
-                        </a>
-                    </ul>
+
+                <div class="site-footer__icons">
+                    <a href=""><img src="assets/dist/img/svg/facebook.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/linkedin.svg" alt=""></a>
+                    <a href=""><img src="assets/dist/img/svg/twitter.svg" alt=""></a>
                 </div>
 
                 <div class="site-footer__container__button">
@@ -487,12 +472,18 @@
 
     </div>
 
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="assets/dist/js/bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/src/js/components/generic/header.js"></script>
     <script src="assets/src/js/components/generic/dropdown.js"></script>
+    <script src="assets/src/js/components/front-page/modal.js"></script>
+    <script src="assets/src/js/components/base/gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 </body>
 
 </html>

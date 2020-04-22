@@ -7,11 +7,13 @@
 
   &__element {
     position: relative;
-    width: 60%;
-    padding: 10rem 0;
+    width: 50%;
+    margin-left: 10rem;
+    padding: 10rem 0 20rem;
 
     @include small {
       width: 100%;
+      margin: 2rem;
     }
     
 
@@ -42,7 +44,6 @@
       }
 
       p {
-        margin-left: 10rem;
         line-height: 3rem;
         text-align: left;
 
@@ -55,7 +56,6 @@
 
       &__buttons {
 
-        align-self: flex-end;
         margin-top: 3rem;
 
         @include small {
@@ -90,14 +90,12 @@
         }
       }
     }
-
   }
 
   &__image {
     position: absolute;
-    right: 5rem;
-    bottom: 0;
-    width: 40%;
+    right: 10rem;
+    bottom: 15rem;
     text-align: end;
 
     @include small {

@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    background-image: linear-gradient(to right, #04028b, #2f2db9, #504dff, $color-brand);
+    background-image: non4;
 
     @include medium {
       justify-content: inherit;
@@ -24,7 +24,7 @@
       }
 
       img {
-        height: 15rem;
+        height: 6rem;
       }
     }
 
@@ -57,6 +57,7 @@
 }
 
 .scroll-up .site-header__container {
+  background-image: linear-gradient(to right, #04028b, #2f2db9, #504dff, $color-brand);
   transform: none;
 }
  

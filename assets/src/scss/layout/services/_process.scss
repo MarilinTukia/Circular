@@ -50,6 +50,8 @@
       width: 50%;
       margin-left: 10rem;
       padding-bottom: 15rem;
+      transform: scale(0);
+      opacity: 0;
 
       @include small {
         width: 100%;
